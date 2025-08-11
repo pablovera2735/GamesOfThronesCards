@@ -1,0 +1,11 @@
+.series-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  

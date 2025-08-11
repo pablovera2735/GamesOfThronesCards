@@ -1,0 +1,26 @@
+<div class="btn_container">
+    <button type="button" class="btn btn-primary" onclick="filterSeries('House Targaryen')">House Targaryen</button>
+    <button type="button" class="btn btn-secondary" onclick="filterSeries('House Stark')">House Stark</button>
+    <button type="button" class="btn btn-success" onclick="filterSeries('House Baratheon')">House Baratheon</button>
+    <button type="button" class="btn btn-danger" onclick="filterSeries('House Lannister')">House Lannister</button>
+    <button type="button" class="btn btn-warning" onclick="filterSeries('House Greyjoy')">House Greyjoy</button>
+    <button type="button" class="btn btn-info" onclick="filterSeries('')">All Houses</button>
+</div>
+
+<script>
+    function filterSeries(family) {
+        let series = [
+            { family: "House Targaryen" },
+            { family: "House Stark" },
+            { family: "House Baratheon" },
+            { family: "House Lannister" },
+            { family: "House Greyjoy" },
+        ];
+
+        let filteredSeries = family ? series.filter(function (filterSeries) {
+            return filterSeries.family === family;
+        }) : series;
+
+        console.log(filteredSeries);
+    }
+</script>
